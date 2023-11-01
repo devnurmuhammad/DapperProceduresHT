@@ -7,7 +7,7 @@ namespace DapperProcedure.Services
 {
     public class StudentService
     {
-        private readonly string ConnectionString = WebApplication.CreateBuilder().Configuration.GetConnectionString("ConnectionString");
+        private readonly string? ConnectionString = WebApplication.CreateBuilder().Configuration.GetConnectionString("ConnectionString");
 
         public Student GetStudentById(int id)
         {
